@@ -6,6 +6,7 @@ class Application
   
   def am_or_pm
     time = Time.now
-    if time
+    if time.strftime(%p) == 'AM'
+      
   
 end
