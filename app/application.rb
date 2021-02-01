@@ -1,6 +1,7 @@
 class Application
   
   def call(env)
+    resp = Rack::Response.new
     return [ 200, {'Content-Type' => 'text/html'}, am_or_pm ]
   end
   
